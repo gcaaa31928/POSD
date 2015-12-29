@@ -180,6 +180,18 @@ public:
         return count >= 2;
     }
 
+    bool isUngroupEnable() {
+        int count = 0;
+        Graphics *graphics = 0;
+        for (int i = 0; i < graphics_list.size(); i++) {
+            if (graphics_list[i]->GetPainter()->is_selected()) {
+                graphics = graphics_list[i];
+                count++;
+            }
+        }
+        return count == 1 && typeid(*graphics) == typeid(CompositeGraphics);
+    }
+
     bool isChanged() const {
         return _isChanged;
     }
