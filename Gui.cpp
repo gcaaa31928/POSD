@@ -209,56 +209,48 @@ string Gui::loadFileDialog() {
 }
 
 void Gui::createRectangle() {
-//    SimpleGraphics *sg = new SimpleGraphics(new Rectangle(400, 300, 100, 50));
-//    AddCommand *addCommand = new AddCommand(scene, model, sg, commandManager);
-//    commandManager->execute(addCommand);
+    SimpleGraphics *sg = new SimpleGraphics(new Rectangle(400, 300, 100, 50));
+    model->addGraphics(sg);
 }
 
 void Gui::createCircle() {
-//    SimpleGraphics *sg = new SimpleGraphics(new Circle(400, 300, 50));
-//    AddCommand *addCommand = new AddCommand(scene, model, sg, commandManager);
-//    commandManager->execute(addCommand);
+    SimpleGraphics *sg = new SimpleGraphics(new Circle(400, 300, 50));
+    model->addGraphics(sg);
 }
 
 void Gui::createSquare() {
-//    SimpleGraphics *sg = new SimpleGraphics(new Square(400, 300, 50));
-//    AddCommand *addCommand = new AddCommand(scene, model, sg, commandManager);
-//    commandManager->execute(addCommand);
+    SimpleGraphics *sg = new SimpleGraphics(new Square(400, 300, 50));
+    model->addGraphics(sg);
 }
 
 
 void Gui::triggerUndo() {
-    commandManager->undo();
+    model->undo();
 }
 
 void Gui::triggerRedo() {
-    commandManager->redo();
+    model->redo();
 }
 
 
 void Gui::triggerGrouping() {
-//    GroupCommand *command = new GroupCommand(scene, model, commandManager);
-//    commandManager->execute(command);
+    model->grouping();
 }
 
 void Gui::triggerUnGrouping() {
-//    UngroupCommand *command = new UngroupCommand(scene, model, commandManager);
-//    commandManager->execute(command);
+    model->unGrouping();
 }
 
 void Gui::triggerDeleting() {
-//    DeleteCommand *command = new DeleteCommand(scene, model, commandManager);
-//    commandManager->execute(command);
+    model->deleting();
 }
 
 void Gui::triggerMoveUp() {
-//    MoveUpCommand *command = new MoveUpCommand(model);
-//    commandManager->execute(command);
-//    model->printState();
+    model->moveUp();
 }
 
 void Gui::triggerMoveDown() {
-    MoveDownCommand *command = new MoveDownCommand(model);
-    commandManager->execute(command);
-    model->printState();
+    model->moveDown();
 }
+
+

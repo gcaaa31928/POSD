@@ -13,9 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fc4e33f-67d6-4b21-b4cf-b4ff350ca3bf" name="Default" comment="* init">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CustomScene.cpp" afterPath="$PROJECT_DIR$/CustomScene.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CustomScene.h" afterPath="$PROJECT_DIR$/CustomScene.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model.h" afterPath="$PROJECT_DIR$/Model.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gui.cpp" afterPath="$PROJECT_DIR$/Gui.cpp" />
     </list>
     <list id="a8077400-86a0-44d5-a1ce-3fc247e5f8ed" name="Failed commit: Default" comment="* init" />
     <ignored path="HW5.iws" />
@@ -36,7 +34,7 @@
     <favorites_list name="HW5" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.32349247">
+    <splitter split-orientation="horizontal" split-proportion="0.58919597">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="DeleteCommand.h" pinned="false" current-in-tab="false">
@@ -104,8 +102,8 @@
           <file leaf-file-name="MoveDownCommand.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/MoveDownCommand.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5082212">
-                  <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+                <state vertical-scroll-proportion="0.56801194">
+                  <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
                   <folding>
                     <element signature="e#40#68#0" expanded="true" />
                   </folding>
@@ -163,7 +161,7 @@
             <entry file="file://$PROJECT_DIR$/Model.h">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+                  <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
                   <folding>
                     <element signature="e#106#123#0" expanded="true" />
                   </folding>
@@ -171,11 +169,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="CustomScene.cpp" pinned="false" current-in-tab="true">
+          <file leaf-file-name="CustomScene.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/CustomScene.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.62780267">
-                  <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
                   <folding>
                     <element signature="e#40#64#0" expanded="true" />
                   </folding>
@@ -207,11 +205,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Gui.cpp" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Gui.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Gui.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="258" column="0" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.4245142">
+                  <caret line="240" column="24" selection-start-line="240" selection-start-column="24" selection-end-line="240" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -276,13 +274,13 @@
         <option value="$PROJECT_DIR$/DeleteCommand.cpp" />
         <option value="$PROJECT_DIR$/MoveUpCommand.h" />
         <option value="$PROJECT_DIR$/MoveUpCommand.cpp" />
-        <option value="$PROJECT_DIR$/Gui.cpp" />
         <option value="$PROJECT_DIR$/MoveDownCommand.h" />
         <option value="$PROJECT_DIR$/MoveDownCommand.cpp" />
         <option value="$PROJECT_DIR$/MoveCommand.h" />
         <option value="$PROJECT_DIR$/Model.h" />
         <option value="$PROJECT_DIR$/CustomScene.h" />
         <option value="$PROJECT_DIR$/CustomScene.cpp" />
+        <option value="$PROJECT_DIR$/Gui.cpp" />
       </list>
     </option>
   </component>
@@ -363,7 +361,7 @@
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
-    <property name="SearchEverywhereHistoryKey" value="cust&#9;FILE&#9;file://D:/homework/HW8/HW8/CustomScene.cpp&#10;model.h&#9;FILE&#9;file://D:/homework/HW8/HW8/Model.h&#10;movecommand&#9;FILE&#9;file://D:/homework/HW8/HW8/MoveCommand.cpp&#10;movedown&#9;FILE&#9;file://D:/homework/HW8/HW8/MoveDownCommand.cpp&#10;gui.&#9;FILE&#9;file://D:/homework/HW8/HW8/Gui.cpp&#10;model&#9;FILE&#9;file://D:/homework/HW8/HW8/Model.h&#10;moveup&#9;FILE&#9;file://D:/homework/HW8/HW8/MoveUpCommand.cpp&#10;gui&#9;FILE&#9;file://D:/homework/HW8/HW8/Gui.cpp&#10;delete&#9;FILE&#9;file://D:/homework/HW8/HW8/DeleteCommand.cpp&#10;ungrou&#9;FILE&#9;file://D:/homework/HW8/HW8/UngroupCommand.cpp&#10;UngroupCommand&#9;FILE&#9;file://D:/homework/HW8/HW8/UngroupCommand.h&#10;painter.cpp&#9;FILE&#9;file://D:/homework/HW8/HW8/Painter.cpp&#10;painter.h&#9;FILE&#9;file://D:/homework/HW8/HW8/Painter.h&#10;rect&#9;FILE&#9;file://D:/homework/HW8/HW8/RectanglePainter.cpp&#10;s&#9;FILE&#9;file://D:/homework/HW8/HW8/SquarePainter.cpp&#10;square&#9;FILE&#9;file://D:/homework/HW8/HW8/SquarePainter.cpp&#10;circle&#9;FILE&#9;file://D:/homework/HW8/HW8/CirclePainter.cpp&#10;painter&#9;FILE&#9;file://D:/homework/HW8/HW8/Painter.h&#10;paintvis&#9;FILE&#9;file://D:/homework/HW8/HW8/PaintVisitor.cpp&#10;add&#9;FILE&#9;file://D:/homework/HW8/HW8/AddCommand.cpp&#10;addc&#9;FILE&#9;file://D:/homework/HW8/HW8/AddCommand.h&#10;group&#9;FILE&#9;file://D:/homework/HW8/HW8/GroupCommand.cpp&#10;pa&#9;FILE&#9;file://D:/homework/HW8/HW8/Painter.h&#10;cont&#9;FILE&#9;file://D:/homework/HW8/HW8/Controller.cpp&#10;contr&#9;FILE&#9;file://D:/homework/HW8/HW8/Controller.h&#10;custo&#9;FILE&#9;file://D:/homework/HW8/HW8/CustomScene.cpp&#10;cmakeli&#9;FILE&#9;file://D:/homework/HW8/HW8/CMakeLists.txt&#10;addcom&#9;FILE&#9;file://D:/homework/HW6/HW6/AddCommand.h&#10;model.&#9;FILE&#9;file:///home/red/Homework/HW6/Model.cpp&#10;ungr&#9;FILE&#9;file:///home/red/Homework/HW6/UngroupCommand.cpp&#10;comp&#9;FILE&#9;file:///home/red/Homework/HW6/CompositeGraphics.cpp&#10;graphics&#9;FILE&#9;file:///home/red/Homework/HW6/Graphics.h&#10;simp&#9;FILE&#9;file:///home/red/Homework/HW6/SimpleGraphics.h&#10;compos&#9;FILE&#9;file:///home/red/Homework/HW6/CompositeGraphics.cpp&#10;graphi&#9;FILE&#9;file:///home/red/Homework/HW6/Graphics.h&#10;compo&#9;FILE&#9;file:///home/red/Homework/HW6/CompositeGraphics.cpp&#10;commandman&#9;FILE&#9;file:///home/red/Homework/HW6/CommandManager.cpp&#10;paint&#9;FILE&#9;file:///home/red/Homework/HW6/Painter.cpp&#10;graphics.cpp&#9;FILE&#9;file:///home/red/Homework/HW6/Graphics.cpp&#10;com&#9;FILE&#9;file:///home/red/Homework/HW6/CompositeGraphics.h&#10;movecomm&#9;FILE&#9;file:///home/red/Homework/HW6/MoveCommand.h&#10;movecom&#9;FILE&#9;file:///home/red/Homework/HW6/MoveCommand.cpp&#10;command&#9;FILE&#9;file:///home/red/Homework/HW6/CommandManager.h&#10;gui.cp&#9;FILE&#9;file:///home/red/Homework/HW6/Gui.cpp&#10;command.cpp&#9;FILE&#9;file:///home/red/Homework/HW6/Command.cpp&#10;commandma&#9;FILE&#9;file:///home/red/Homework/HW6/CommandManager.cpp&#10;coma&#9;FILE&#9;file:///home/red/Homework/HW6/CommandManager.cpp&#10;graphic&#9;FILE&#9;file:///home/red/Homework/HW6/GraphicsItemFactory.cpp&#10;gui.c&#9;FILE&#9;file:///home/red/Homework/HW6/Gui.cpp&#10;moveupc&#9;FILE&#9;file:///home/red/Homework/HW6/MoveUpCommand.h" />
+    <property name="SearchEverywhereHistoryKey" value="gui.&#9;FILE&#9;file://D:/homework/HW8/HW8/Gui.cpp&#10;cust&#9;FILE&#9;file://D:/homework/HW8/HW8/CustomScene.cpp&#10;model.h&#9;FILE&#9;file://D:/homework/HW8/HW8/Model.h&#10;movecommand&#9;FILE&#9;file://D:/homework/HW8/HW8/MoveCommand.cpp&#10;movedown&#9;FILE&#9;file://D:/homework/HW8/HW8/MoveDownCommand.cpp&#10;model&#9;FILE&#9;file://D:/homework/HW8/HW8/Model.h&#10;moveup&#9;FILE&#9;file://D:/homework/HW8/HW8/MoveUpCommand.cpp&#10;gui&#9;FILE&#9;file://D:/homework/HW8/HW8/Gui.cpp&#10;delete&#9;FILE&#9;file://D:/homework/HW8/HW8/DeleteCommand.cpp&#10;ungrou&#9;FILE&#9;file://D:/homework/HW8/HW8/UngroupCommand.cpp&#10;UngroupCommand&#9;FILE&#9;file://D:/homework/HW8/HW8/UngroupCommand.h&#10;painter.cpp&#9;FILE&#9;file://D:/homework/HW8/HW8/Painter.cpp&#10;painter.h&#9;FILE&#9;file://D:/homework/HW8/HW8/Painter.h&#10;rect&#9;FILE&#9;file://D:/homework/HW8/HW8/RectanglePainter.cpp&#10;s&#9;FILE&#9;file://D:/homework/HW8/HW8/SquarePainter.cpp&#10;square&#9;FILE&#9;file://D:/homework/HW8/HW8/SquarePainter.cpp&#10;circle&#9;FILE&#9;file://D:/homework/HW8/HW8/CirclePainter.cpp&#10;painter&#9;FILE&#9;file://D:/homework/HW8/HW8/Painter.h&#10;paintvis&#9;FILE&#9;file://D:/homework/HW8/HW8/PaintVisitor.cpp&#10;add&#9;FILE&#9;file://D:/homework/HW8/HW8/AddCommand.cpp&#10;addc&#9;FILE&#9;file://D:/homework/HW8/HW8/AddCommand.h&#10;group&#9;FILE&#9;file://D:/homework/HW8/HW8/GroupCommand.cpp&#10;pa&#9;FILE&#9;file://D:/homework/HW8/HW8/Painter.h&#10;cont&#9;FILE&#9;file://D:/homework/HW8/HW8/Controller.cpp&#10;contr&#9;FILE&#9;file://D:/homework/HW8/HW8/Controller.h&#10;custo&#9;FILE&#9;file://D:/homework/HW8/HW8/CustomScene.cpp&#10;cmakeli&#9;FILE&#9;file://D:/homework/HW8/HW8/CMakeLists.txt&#10;addcom&#9;FILE&#9;file://D:/homework/HW6/HW6/AddCommand.h&#10;model.&#9;FILE&#9;file:///home/red/Homework/HW6/Model.cpp&#10;ungr&#9;FILE&#9;file:///home/red/Homework/HW6/UngroupCommand.cpp&#10;comp&#9;FILE&#9;file:///home/red/Homework/HW6/CompositeGraphics.cpp&#10;graphics&#9;FILE&#9;file:///home/red/Homework/HW6/Graphics.h&#10;simp&#9;FILE&#9;file:///home/red/Homework/HW6/SimpleGraphics.h&#10;compos&#9;FILE&#9;file:///home/red/Homework/HW6/CompositeGraphics.cpp&#10;graphi&#9;FILE&#9;file:///home/red/Homework/HW6/Graphics.h&#10;compo&#9;FILE&#9;file:///home/red/Homework/HW6/CompositeGraphics.cpp&#10;commandman&#9;FILE&#9;file:///home/red/Homework/HW6/CommandManager.cpp&#10;paint&#9;FILE&#9;file:///home/red/Homework/HW6/Painter.cpp&#10;graphics.cpp&#9;FILE&#9;file:///home/red/Homework/HW6/Graphics.cpp&#10;com&#9;FILE&#9;file:///home/red/Homework/HW6/CompositeGraphics.h&#10;movecomm&#9;FILE&#9;file:///home/red/Homework/HW6/MoveCommand.h&#10;movecom&#9;FILE&#9;file:///home/red/Homework/HW6/MoveCommand.cpp&#10;command&#9;FILE&#9;file:///home/red/Homework/HW6/CommandManager.h&#10;gui.cp&#9;FILE&#9;file:///home/red/Homework/HW6/Gui.cpp&#10;command.cpp&#9;FILE&#9;file:///home/red/Homework/HW6/Command.cpp&#10;commandma&#9;FILE&#9;file:///home/red/Homework/HW6/CommandManager.cpp&#10;coma&#9;FILE&#9;file:///home/red/Homework/HW6/CommandManager.cpp&#10;graphic&#9;FILE&#9;file:///home/red/Homework/HW6/GraphicsItemFactory.cpp&#10;gui.c&#9;FILE&#9;file:///home/red/Homework/HW6/Gui.cpp&#10;moveupc&#9;FILE&#9;file:///home/red/Homework/HW6/MoveUpCommand.h" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -871,14 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gui.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="258" column="0" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MoveUpCommand.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -919,16 +909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MoveDownCommand.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5082212">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding>
-            <element signature="e#40#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CustomScene.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -939,22 +919,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CustomScene.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Model.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding>
             <element signature="e#106#123#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CustomScene.cpp">
+    <entry file="file://$PROJECT_DIR$/Gui.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62780267">
-          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.4245142">
+          <caret line="240" column="24" selection-start-line="240" selection-start-column="24" selection-end-line="240" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MoveDownCommand.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56801194">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
           <folding>
-            <element signature="e#40#64#0" expanded="true" />
+            <element signature="e#40#68#0" expanded="true" />
           </folding>
         </state>
       </provider>
