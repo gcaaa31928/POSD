@@ -47,4 +47,5 @@ void CustomScene::update(void *pVoid) {
 void CustomScene::updateButtonState(Model *model) {
     _gui->undo->setEnabled(model->isUndoEnable());
     _gui->redo->setEnabled(model->isRedoEnable());
+    _gui->group->setEnabled(model->isGroupEnable());
 }

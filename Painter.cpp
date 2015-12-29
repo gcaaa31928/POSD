@@ -43,11 +43,10 @@ void Painter::mousePressEvent(QGraphicsSceneDragDropEvent *event) {
 
 
 void Painter::handleMousePicked(QPointF deltaPoint, QPointF pos) {
-    cout<<pos.x()<<","<<pos.y()<<endl;
+    cout << pos.x() << "," << pos.y() << endl;
     pos += this->pos();
     if (fabs(deltaPoint.x()) + fabs(deltaPoint.y()) <= 4) {
         if (_selected) {
-            cout<<"fuck you"<<endl;
             DescriptionVisitor dv;
             Graphics *graphics = this->getGraphics()->childContainedPoint(pos);
 //            cout << graphics << endl;
@@ -68,14 +67,26 @@ void Painter::handleMousePicked(QPointF deltaPoint, QPointF pos) {
             graphics->accept(dv);
 //            cout<<dv.getDescription()<<endl;
         }
-        _selected = true;
+        set_selected(true);
         if (_selected) {
-            cout<<"fuck you2"<<endl;
             _outterborderColor = Qt::red;
             this->update(0, 0, _width, _height);
 
         }
     }
+}
+
+
+void Painter::set_selected(bool _selected) {
+    if (_selected) {
+        _outterborderColor = Qt::red;
+    } else {
+        _deepSelected = false;
+        _outterborderColor = _originColor;
+    }
+    Painter::_selected = _selected;
+    this->update(0, 0, _width, _height);
+    model->graphicsSelectedStateChanged();
 }
 
 void Painter::mouseReleaseEvent(QGraphicsSceneMouseEvent *event) {

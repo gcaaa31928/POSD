@@ -79,6 +79,7 @@ void Model::unselectAllGraphics() {
     for (int i = 0; i < graphics_list.size(); i++) {
         graphics_list[i]->unpickAllChild();
     }
+    _redrawSign = false;
 }
 
 void Model::unselectDeepSelectedGraphics(Graphics *exceptGraphics) {

@@ -21,10 +21,11 @@
 using namespace std;
 
 class CustomScene;
+
 class Model : public Subject {
 public:
 
-    Model(){
+    Model() {
         _isChanged = false;
     };
 
@@ -150,6 +151,11 @@ public:
         _isChanged = true;
     }
 
+    void graphicsSelectedStateChanged() {
+        _redrawSign = false;
+        this->notifyObservers();
+    }
+
     bool isUndoEnable() {
         if (commandManager->isUndoEmpty()) {
             return false;
@@ -162,6 +168,16 @@ public:
             return false;
         }
         return true;
+    }
+
+    bool isGroupEnable() {
+        int count = 0;
+        for (int i = 0; i < graphics_list.size(); i++) {
+            if (graphics_list[i]->GetPainter()->is_selected()) {
+                count++;
+            }
+        }
+        return count >= 2;
     }
 
     bool isChanged() const {

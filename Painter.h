@@ -110,16 +110,7 @@ protected:
 public:
 
 
-    void set_selected(bool _selected) {
-        if (_selected) {
-            _outterborderColor = Qt::red;
-        } else {
-            _deepSelected = false;
-            _outterborderColor = _originColor;
-        }
-        Painter::_selected = _selected;
-        this->update(0, 0, _width, _height);
-    }
+    void set_selected(bool _selected);
 
 
     void set_deepSelected(bool _deepSelected) {
