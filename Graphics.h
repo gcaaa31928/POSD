@@ -58,9 +58,15 @@ public:
 
     virtual Graphics *getChildSelectedGraphics() { }
 
-    virtual bool moveUpLevel();
+    virtual int getPrevSibling();
+
+    virtual int getNextSibling();
+
+    virtual int getSiblingIndex();
 
     virtual bool moveDownLevel();
+
+    virtual bool moveUpLevel();
 
 protected:
     Graphics() { }

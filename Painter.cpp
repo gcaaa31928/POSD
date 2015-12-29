@@ -52,7 +52,7 @@ void Painter::handleMousePicked(QPointF deltaPoint, QPointF pos) {
 //            cout << graphics << endl;
             // did not chose something or chosen by itself
             if (graphics == 0 || graphics == this->getGraphics()) {
-                this->_deepSelected = false;
+                this->set_deepSelected(false);
                 this->getGraphics()->unpickAllChild();
                 this->set_selected(true);
                 return;
@@ -62,7 +62,7 @@ void Painter::handleMousePicked(QPointF deltaPoint, QPointF pos) {
                 cout << parent << endl;
                 parent->GetPainter()->set_deepSelected(true);
             }
-            this->_deepSelected = true;
+            this->set_deepSelected(true);
             graphics->GetPainter()->set_selected(true);
             graphics->accept(dv);
 //            cout<<dv.getDescription()<<endl;
@@ -88,6 +88,16 @@ void Painter::set_selected(bool _selected) {
     this->update(0, 0, _width, _height);
     model->graphicsSelectedStateChanged();
 }
+
+
+void Painter::set_deepSelected(bool _deepSelected) {
+    if (_deepSelected) {
+        _outterborderColor = Qt::red;
+    }
+    Painter::_deepSelected = _deepSelected;
+    this->update(0, 0, _width, _height);
+}
+
 
 void Painter::mouseReleaseEvent(QGraphicsSceneMouseEvent *event) {
     event->setAccepted(true);// tell the base class we are handling this event

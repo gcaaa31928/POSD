@@ -156,6 +156,11 @@ public:
         this->notifyObservers();
     }
 
+    void graphicsDeepSelectedStateChanged() {
+        _redrawSign = false;
+        this->notifyObservers();
+    }
+
     bool isUndoEnable() {
         if (commandManager->isUndoEmpty()) {
             return false;
@@ -190,6 +195,36 @@ public:
             }
         }
         return count == 1 && typeid(*graphics) == typeid(CompositeGraphics);
+    }
+
+    bool isDeleteEnable() {
+        int count = 0;
+        for (int i = 0; i < graphics_list.size(); i++) {
+            if (graphics_list[i]->GetPainter()->is_selected()) {
+                count++;
+            }
+        }
+        return count == 1;
+    }
+
+    bool isMoveUpEnable() {
+        Graphics *graphics = getDeepGraphics();
+        if (graphics == 0) {
+            return false;
+        }
+        Graphics *selectedGraphics = graphics->getChildSelectedGraphics();
+        return selectedGraphics->getPrevSibling() >= 0;
+    }
+
+    bool isMoveDownEnable() {
+        Graphics *graphics = getDeepGraphics();
+        if (graphics == 0) {
+            return false;
+        }
+        Graphics *selectedGraphics = graphics->getChildSelectedGraphics();
+        CompositeGraphics *parentGraphics = selectedGraphics->getParent();
+        vector<Graphics *> sibling = parentGraphics->getGraphics();
+        return selectedGraphics->getNextSibling() < sibling.size();
     }
 
     bool isChanged() const {

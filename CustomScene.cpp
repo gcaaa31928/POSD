@@ -49,4 +49,7 @@ void CustomScene::updateButtonState(Model *model) {
     _gui->redo->setEnabled(model->isRedoEnable());
     _gui->group->setEnabled(model->isGroupEnable());
     _gui->ungroup->setEnabled(model->isUngroupEnable());
+    _gui->deleteAction->setEnabled(model->isDeleteEnable());
+    _gui->moveUp->setEnabled(model->isMoveUpEnable());
+    _gui->moveDown->setEnabled(model->isMoveDownEnable());
 }

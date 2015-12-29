@@ -113,14 +113,7 @@ public:
     void set_selected(bool _selected);
 
 
-    void set_deepSelected(bool _deepSelected) {
-        if (_deepSelected) {
-            _outterborderColor = Qt::red;
-        }
-        Painter::_deepSelected = _deepSelected;
-        this->update(0, 0, _width, _height);
-    }
-
+    void set_deepSelected(bool _deepSelected);
     const QPointF &get_location() const {
         return _location;
     }
