@@ -35,6 +35,8 @@ Gui::Gui() {
     QString title = "Sample";
     setWindowTitle(title);
     setMinimumSize(800, 600);
+    CustomScene* scene = dynamic_cast<CustomScene*>(this->scene);
+    scene->updateButtonState(model);
     Display();
 
 }
@@ -52,7 +54,7 @@ void Gui::CreateView() {
     QString gView = "graphicView";
     graphicsView->setObjectName(gView);
 
-    scene = new CustomScene(model);//�޲zpainter item������
+    scene = new CustomScene(model, this);//�޲zpainter item������
     model->setScene((CustomScene *)scene);
     scene->setSceneRect(0, 0, 800, 600);
     graphicsView->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);

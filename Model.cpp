@@ -3,6 +3,7 @@
 //
 
 #include "Model.h"
+#include "Gui.h"
 #include "DescriptionVisitor.h"
 #include "PaintVisitor.h"
 
@@ -113,4 +114,3 @@ Graphics *Model::getDeepGraphics() {
     }
     return 0;
 }
-

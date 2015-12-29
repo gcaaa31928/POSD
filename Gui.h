@@ -45,11 +45,6 @@ public:
     void CreateMenus();
     void CreateToolBar();
     void SetActionConnection();
-protected:
-private:
-    CommandManager *commandManager;
-    Model *model;
-    QAction *aboutDeveloper;
     QAction *loadFile;
     QAction *saveFile;
     QAction *drawCircle;
@@ -62,6 +57,11 @@ private:
     QAction *deleteAction;
     QAction *moveUp;
     QAction *moveDown;
+protected:
+private:
+    CommandManager *commandManager;
+    Model *model;
+    QAction *aboutDeveloper;
     QMenu *about;
     QMenu *file;
     QMenu *createShape;

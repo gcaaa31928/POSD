@@ -17,10 +17,10 @@
 #include "MoveDownCommand.h"
 #include "MoveCommand.h"
 
+
 using namespace std;
 
 class CustomScene;
-
 class Model : public Subject {
 public:
 
@@ -79,10 +79,9 @@ public:
     }
 
     void addGraphics(SimpleGraphics *simpleGraphics) {
-        cout << "hi" << endl;
         AddCommand *addCommand = new AddCommand(scene, this, simpleGraphics);
-        cout << "fuck" << endl;
         commandManager->execute(addCommand);
+        _redrawSign = true;
         this->notifyObservers();
         _isChanged = true;
     }
@@ -90,17 +89,21 @@ public:
     void moveGraphicsToPoint(Graphics *graphics, Painter *painter, QPointF pointF) {
         MoveCommand *command = new MoveCommand(graphics, painter, pointF.x(), pointF.y());
         commandManager->execute(command);
+        _redrawSign = false;
+        this->notifyObservers();
         _isChanged = true;
     }
 
     void undo() {
         commandManager->undo();
+        _redrawSign = true;
         this->notifyObservers();
         _isChanged = true;
     }
 
     void redo() {
         commandManager->redo();
+        _redrawSign = true;
         this->notifyObservers();
         _isChanged = true;
     }
@@ -108,6 +111,7 @@ public:
     void grouping() {
         GroupCommand *command = new GroupCommand(scene, this);
         commandManager->execute(command);
+        _redrawSign = true;
         this->notifyObservers();
         _isChanged = true;
     }
@@ -115,6 +119,7 @@ public:
     void unGrouping() {
         UngroupCommand *command = new UngroupCommand(scene, this);
         commandManager->execute(command);
+        _redrawSign = true;
         this->notifyObservers();
         _isChanged = true;
     }
@@ -122,6 +127,7 @@ public:
     void deleting() {
         DeleteCommand *command = new DeleteCommand(scene, this);
         commandManager->execute(command);
+        _redrawSign = true;
         this->notifyObservers();
         _isChanged = true;
     }
@@ -129,6 +135,7 @@ public:
     void moveUp() {
         MoveUpCommand *command = new MoveUpCommand(this);
         commandManager->execute(command);
+        _redrawSign = true;
         this->notifyObservers();
         _isChanged = true;
     }
@@ -136,18 +143,39 @@ public:
     void moveDown() {
         MoveDownCommand *command = new MoveDownCommand(this);
         commandManager->execute(command);
+        _redrawSign = true;
         this->notifyObservers();
         _isChanged = true;
+    }
+
+    bool isUndoEnable() {
+        if (commandManager->isUndoEmpty()) {
+            return false;
+        }
+        return true;
+    }
+
+    bool isRedoEnable() {
+        if (commandManager->isRedoEmpty()) {
+            return false;
+        }
+        return true;
     }
 
     bool isChanged() const {
         return _isChanged;
     }
+
+    bool isRedrawSign() const {
+        return _redrawSign;
+    }
+
 private:
     vector<Graphics *> graphics_list;
     CustomScene *scene;
     CommandManager *commandManager;
     bool _isChanged;
+    bool _redrawSign;
 public:
 };
 

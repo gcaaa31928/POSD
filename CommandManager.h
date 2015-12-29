@@ -26,6 +26,14 @@ public:
     void undo();
 
     void clear();
+
+    bool isUndoEmpty() {
+        return m_undoCmds.empty();
+    }
+
+    bool isRedoEmpty() {
+        return m_redoCmds.empty();
+    }
 };
 
 

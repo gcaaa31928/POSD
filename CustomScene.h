@@ -10,21 +10,23 @@
 #include "Views.h"
 
 class Model;
+class Gui;
 class CustomScene : public QGraphicsScene, public Views {
 
 public:
-    CustomScene(Model *model);
+    CustomScene(Model *model, Gui *gui);
 
+    void updateButtonState(Model *);
+    virtual void update(void *pVoid);
 protected:
-    virtual void mousePressEvent(QGraphicsSceneMouseEvent *);
 
+    virtual void mousePressEvent(QGraphicsSceneMouseEvent *);
 private:
     Model *_model;
     QPointF _pressedLocation;
     QGraphicsRectItem *_selectionRect;
     bool _selecting;
-public:
-    virtual void update(void *pVoid);
+    Gui *_gui;
 };
 
 #endif //VISITOR1013_2015_CUSTOMSCENE_H
