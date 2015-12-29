@@ -31,7 +31,7 @@ class Graphics;
 
 class Painter : public QGraphicsItem, public Controller {
 public:
-    Painter(CommandManager *cm);
+    Painter();
 
     virtual ~Painter();
 

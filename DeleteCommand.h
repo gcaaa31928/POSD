@@ -8,11 +8,11 @@
 
 #include "Command.h"
 #include "Painter.h"
-#include "Model.h"
 #include "SimpleGraphics.h"
 #include "GraphicsItemFactory.h"
 #include <QGraphicsScene>
 
+class Model;
 class DeleteCommand : public Command {
 private:
     QGraphicsItem *item;
@@ -22,17 +22,7 @@ private:
     Model *model;
 
 public:
-    DeleteCommand(QGraphicsScene *s, Model *m ,CommandManager *cm):Command() {
-        int selectedCount = 0;
-        vector<Graphics *> list = m->getGraphicsList();
-        for (int i = 0; i < list.size(); i++) {
-            if (list[i]->GetPainter()->is_selected()) {
-                graphics_list.push_back(list[i]);
-            }
-        }
-        this->model = m;
-        this->scene = s;
-    }
+    DeleteCommand(QGraphicsScene *s, Model *m);
 
     virtual ~DeleteCommand(){};
 
@@ -40,6 +30,7 @@ public:
 
     void unexecute();
 };
+
 
 
 

@@ -31,6 +31,7 @@
       <sourceFolder url="file://$MODULE_DIR$/RectanglePainter.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Subject.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Gui.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Controller.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Gui.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/DescriptionVisitor.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SquarePainter.cpp" isTestSource="false" />
@@ -87,14 +88,14 @@
       <sourceFolder url="file://$MODULE_DIR$/Qt/5.5/mingw492_32/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Qt/5.5/mingw492_32/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Qt/5.5/mingw492_32/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Qt/5.5/mingw492_32/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Qt/5.5/mingw492_32/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Qt/5.5/mingw492_32/lib/cmake/Qt5Core/Qt5CoreConfig.cmake" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Qt/5.5/mingw492_32/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Qt/5.5/mingw492_32/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Qt/5.5/mingw492_32/lib/cmake/Qt5Core/Qt5CoreMacros.cmake" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Qt/5.5/mingw492_32/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Qt/5.5/mingw492_32/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Qt/5.5/mingw492_32/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Qt/5.5/mingw492_32/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Qt/5.5/mingw492_32/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Qt/5.5/mingw492_32/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Qt/5.5/mingw492_32/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SquarePainter.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/DeleteCommand.h" isTestSource="false" />
@@ -107,6 +108,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Circle.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GraphicsVisitor.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Square.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Controller.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GroupCommand.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MoveDownCommand.cpp" isTestSource="false" />
     </content>
@@ -114,9 +116,9 @@
     <orderEntry type="module-library">
       <library name="Header Search Paths">
         <CLASSES>
-          <root url="file://$USER_HOME$/.CLion12/system/cmake/generated/b74f36f0/b74f36f0/MinSizeRel" />
-          <root url="file://$USER_HOME$/.CLion12/system/cmake/generated/b74f36f0/b74f36f0/Debug" />
           <root url="file://$USER_HOME$/.CLion12/system/cmake/generated/b74f36f0/b74f36f0/Release" />
+          <root url="file://$USER_HOME$/.CLion12/system/cmake/generated/b74f36f0/b74f36f0/Debug" />
+          <root url="file://$USER_HOME$/.CLion12/system/cmake/generated/b74f36f0/b74f36f0/MinSizeRel" />
           <root url="file://$USER_HOME$/.CLion12/system/cmake/generated/b74f36f0/b74f36f0/RelWithDebInfo" />
           <root url="file://F:/Qt/Tools/mingw492_32/lib/gcc/i686-w64-mingw32/4.9.2/include" />
           <root url="file://F:/Qt/Tools/mingw492_32/lib/gcc/i686-w64-mingw32/4.9.2/include-fixed" />
@@ -125,9 +127,9 @@
           <root url="file://F:/Qt/5.5/mingw492_32/mkspecs/win32-g++" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$USER_HOME$/.CLion12/system/cmake/generated/b74f36f0/b74f36f0/MinSizeRel" />
-          <root url="file://$USER_HOME$/.CLion12/system/cmake/generated/b74f36f0/b74f36f0/Debug" />
           <root url="file://$USER_HOME$/.CLion12/system/cmake/generated/b74f36f0/b74f36f0/Release" />
+          <root url="file://$USER_HOME$/.CLion12/system/cmake/generated/b74f36f0/b74f36f0/Debug" />
+          <root url="file://$USER_HOME$/.CLion12/system/cmake/generated/b74f36f0/b74f36f0/MinSizeRel" />
           <root url="file://$USER_HOME$/.CLion12/system/cmake/generated/b74f36f0/b74f36f0/RelWithDebInfo" />
           <root url="file://F:/Qt/Tools/mingw492_32/lib/gcc/i686-w64-mingw32/4.9.2/include" />
           <root url="file://F:/Qt/Tools/mingw492_32/lib/gcc/i686-w64-mingw32/4.9.2/include-fixed" />
@@ -136,9 +138,9 @@
           <root url="file://F:/Qt/5.5/mingw492_32/mkspecs/win32-g++" />
         </SOURCES>
         <excluded>
-          <root url="file://$USER_HOME$/.CLion12/system/cmake/generated/b74f36f0/b74f36f0/MinSizeRel/Visitor1013_2015_automoc.cpp" />
-          <root url="file://$USER_HOME$/.CLion12/system/cmake/generated/b74f36f0/b74f36f0/Debug/Visitor1013_2015_automoc.cpp" />
           <root url="file://$USER_HOME$/.CLion12/system/cmake/generated/b74f36f0/b74f36f0/Release/Visitor1013_2015_automoc.cpp" />
+          <root url="file://$USER_HOME$/.CLion12/system/cmake/generated/b74f36f0/b74f36f0/Debug/Visitor1013_2015_automoc.cpp" />
+          <root url="file://$USER_HOME$/.CLion12/system/cmake/generated/b74f36f0/b74f36f0/MinSizeRel/Visitor1013_2015_automoc.cpp" />
           <root url="file://$USER_HOME$/.CLion12/system/cmake/generated/b74f36f0/b74f36f0/RelWithDebInfo/Visitor1013_2015_automoc.cpp" />
         </excluded>
       </library>

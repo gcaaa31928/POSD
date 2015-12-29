@@ -3,18 +3,26 @@
 //
 
 #include "MoveUpCommand.h"
+#include "Model.h"
 
+MoveUpCommand::MoveUpCommand(Model *m) : Command() {
+    model = m;
+    parentGraphics = m->getDeepGraphics();
+    if (parentGraphics == 0) {
+        failed = true;
+        return;
+    }
+    selectedGraphics = parentGraphics->getChildSelectedGraphics();
+}
 
 void MoveUpCommand::execute() {
-    if (!selectedGraphics->moveUpLevel()){
+    if (!selectedGraphics->moveUpLevel()) {
         failed = true;
     }
-    model->redrawGraphics();
 }
 
 void MoveUpCommand::unexecute() {
-    if (!selectedGraphics->moveDownLevel()){
+    if (!selectedGraphics->moveDownLevel()) {
         failed = true;
     }
-    model->redrawGraphics();
 }

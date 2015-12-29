@@ -5,7 +5,7 @@
 #include "SquarePainter.h"
 
 
-SquarePainter::SquarePainter(int x,int y,int length, Graphics *g,CommandManager *cm) : Painter(cm) {
+SquarePainter::SquarePainter(int x,int y,int length, Graphics *g) : Painter() {
     _x = x;
     _y = y;
     _width =  length;

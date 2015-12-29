@@ -3,17 +3,12 @@
 //
 
 #include <sstream>
-#include <stdio.h>
 #include <QGraphicsEllipseItem>
 #include "GraphicsItemFactory.h"
-#include "SimpleGraphics.h"
-#include "Square.h"
 #include "CirclePainter.h"
 #include "SquarePainter.h"
 #include "RectanglePainter.h"
-#include <QColor>
-#include <QPen>
-#include <QPainter>
+#include "Model.h"
 
 using namespace std;
 
@@ -25,7 +20,7 @@ QGraphicsItem *GraphicsItemFactory::createGraphicsItemBySimpleGraphics(SimpleGra
     if (loc != string::npos) {
         int x, y, r;
         sscanf(substring.c_str(), "C(%d,%d,%d)", &x, &y, &r);
-        Painter *p = new CirclePainter(x, y, r, g, commandManager);
+        Painter *p = new CirclePainter(x, y, r, g);
         g->SetPainter(p);
         return p;
     }
@@ -33,7 +28,7 @@ QGraphicsItem *GraphicsItemFactory::createGraphicsItemBySimpleGraphics(SimpleGra
     if (loc != string::npos) {
         int x, y, l;
         sscanf(substring.c_str(), "S(%d,%d,%d)", &x, &y, &l);
-        Painter *p = new SquarePainter(x, y, l, g, commandManager);
+        Painter *p = new SquarePainter(x, y, l, g);
         g->SetPainter(p);
         return p;
     }
@@ -41,7 +36,7 @@ QGraphicsItem *GraphicsItemFactory::createGraphicsItemBySimpleGraphics(SimpleGra
     if (loc != string::npos) {
         int x, y, l, w;
         sscanf(substring.c_str(), "R(%d,%d,%d,%d)", &x, &y, &l, &w);
-        Painter *p = new RectanglePainter(x, y, l, w, g, commandManager);
+        Painter *p = new RectanglePainter(x, y, l, w, g);
         g->SetPainter(p);
         return p;
     }
@@ -52,7 +47,7 @@ QGraphicsItem *GraphicsItemFactory::createGraphicsItemByCompositeGraphics(Compos
     Painter *p = new RectanglePainter(rectangle.getX(),
                                       rectangle.getY(),
                                       rectangle.getL(),
-                                      rectangle.getW(), g, commandManager);
+                                      rectangle.getW(), g);
     p->SetFilledColor(Qt::transparent);
     p->SetOutterColor(Qt::green);
     g->SetPainter(p);

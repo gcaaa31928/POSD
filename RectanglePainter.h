@@ -25,7 +25,7 @@
 
 class RectanglePainter : public Painter {
 public:
-    RectanglePainter(int x,int y,int width, int height, Graphics *g,CommandManager *cm);
+    RectanglePainter(int x,int y,int width, int height, Graphics *g);
 
     virtual void paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
                        QWidget *widget); ///< must be re-implemented here to pain the box on the paint-event

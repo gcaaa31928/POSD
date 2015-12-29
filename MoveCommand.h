@@ -6,9 +6,8 @@
 #define VISITOR1013_2015_MOVECOMMAND_H
 
 
-#include "Command.h"
+#include"Command.h"
 #include "Painter.h"
-#include "Model.h"
 #include "SimpleGraphics.h"
 #include "GraphicsItemFactory.h"
 #include <QGraphicsScene>
@@ -22,7 +21,6 @@ private:
     int y;
 public:
     MoveCommand(Graphics *g, Painter *p, int x, int y):Command() {
-        printf("%d %d\n",x,y);
         if (x == 0 && y == 0){
             failed = true;
         }
@@ -38,6 +36,5 @@ public:
 
     void unexecute();
 };
-
 
 #endif //VISITOR1013_2015_MOVECOMMAND_H

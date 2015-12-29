@@ -4,7 +4,7 @@
 
 #include "RectanglePainter.h"
 
-RectanglePainter::RectanglePainter(int x, int y, int width, int height, Graphics *g, CommandManager *cm) : Painter(cm) {
+RectanglePainter::RectanglePainter(int x, int y, int width, int height, Graphics *g) : Painter() {
     _x = x;
     _y = y;
     _width = width;

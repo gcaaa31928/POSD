@@ -8,11 +8,11 @@
 
 #include "Command.h"
 #include "Painter.h"
-#include "Model.h"
 #include "SimpleGraphics.h"
 #include "GraphicsItemFactory.h"
 #include <QGraphicsScene>
 
+class Model;
 class AddCommand : public Command {
 private:
     QGraphicsItem *item;
@@ -21,8 +21,8 @@ private:
     Model *model;
 
 public:
-    AddCommand(QGraphicsScene *s, Model *m, SimpleGraphics *g,CommandManager *cm):Command() {
-        GraphicsItemFactory *factory = new GraphicsItemFactory(cm);
+    AddCommand(QGraphicsScene *s, Model *m, SimpleGraphics *g):Command() {
+        GraphicsItemFactory *factory = new GraphicsItemFactory(m);
         QPen pen;
         pen.setColor(Qt::green);
         this->item = factory->createGraphicsItemBySimpleGraphics(g, pen);

@@ -12,16 +12,17 @@
 #include "CommandManager.h"
 #include "CompositeGraphics.h"
 
+class Model;
 class GraphicsItemFactory {
 public:
 
-    GraphicsItemFactory(CommandManager *cm):commandManager(cm){
+    GraphicsItemFactory(Model* model): _model(model){ }
 
-    }
     QGraphicsItem*createGraphicsItemBySimpleGraphics(SimpleGraphics *g, QPen pen);
     QGraphicsItem*createGraphicsItemByCompositeGraphics(CompositeGraphics *g);
 private:
-    CommandManager *commandManager;
+    Model* _model;
+
 };
 
 

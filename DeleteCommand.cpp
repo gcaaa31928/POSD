@@ -3,6 +3,20 @@
 //
 
 #include "DeleteCommand.h"
+#include "Model.h"
+
+DeleteCommand::DeleteCommand(QGraphicsScene *s, Model *m):Command() {
+    int selectedCount = 0;
+    vector<Graphics *> list = m->getGraphicsList();
+    for (int i = 0; i < list.size(); i++) {
+        if (list[i]->GetPainter()->is_selected()) {
+            graphics_list.push_back(list[i]);
+        }
+    }
+    this->model = m;
+    this->scene = s;
+}
+
 void DeleteCommand::execute() {
     for (int i = 0; i < graphics_list.size(); i++) {
         model->removeGraphics(graphics_list[i]);
@@ -11,10 +25,6 @@ void DeleteCommand::execute() {
 //            scene->removeItem(painters[j]);
         }
     }
-    model->redrawGraphics();
-//    scene->update();
-    model->printState();
-
 }
 
 void DeleteCommand::unexecute() {
@@ -26,7 +36,5 @@ void DeleteCommand::unexecute() {
 //            scene->addItem(painters[j]);
         }
     }
-    model->redrawGraphics();
-//    scene->update();
-    model->printState();
 }
+

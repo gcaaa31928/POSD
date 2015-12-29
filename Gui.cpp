@@ -198,7 +198,7 @@ string Gui::loadFileDialog() {
     model->clearGraphics();
     model->addMultipleGraphics(gs);
     for (int i = 0; i < gs.size(); i++) {
-        PaintVisitor paintVisitor(commandManager);
+        PaintVisitor paintVisitor(model);
         paintVisitor.setScene(scene);
         gs[i]->accept(paintVisitor);
         paintVisitor.Draw();
@@ -209,21 +209,21 @@ string Gui::loadFileDialog() {
 }
 
 void Gui::createRectangle() {
-    SimpleGraphics *sg = new SimpleGraphics(new Rectangle(400, 300, 100, 50));
-    AddCommand *addCommand = new AddCommand(scene, model, sg, commandManager);
-    commandManager->execute(addCommand);
+//    SimpleGraphics *sg = new SimpleGraphics(new Rectangle(400, 300, 100, 50));
+//    AddCommand *addCommand = new AddCommand(scene, model, sg, commandManager);
+//    commandManager->execute(addCommand);
 }
 
 void Gui::createCircle() {
-    SimpleGraphics *sg = new SimpleGraphics(new Circle(400, 300, 50));
-    AddCommand *addCommand = new AddCommand(scene, model, sg, commandManager);
-    commandManager->execute(addCommand);
+//    SimpleGraphics *sg = new SimpleGraphics(new Circle(400, 300, 50));
+//    AddCommand *addCommand = new AddCommand(scene, model, sg, commandManager);
+//    commandManager->execute(addCommand);
 }
 
 void Gui::createSquare() {
-    SimpleGraphics *sg = new SimpleGraphics(new Square(400, 300, 50));
-    AddCommand *addCommand = new AddCommand(scene, model, sg, commandManager);
-    commandManager->execute(addCommand);
+//    SimpleGraphics *sg = new SimpleGraphics(new Square(400, 300, 50));
+//    AddCommand *addCommand = new AddCommand(scene, model, sg, commandManager);
+//    commandManager->execute(addCommand);
 }
 
 
@@ -237,24 +237,24 @@ void Gui::triggerRedo() {
 
 
 void Gui::triggerGrouping() {
-    GroupCommand *command = new GroupCommand(scene, model, commandManager);
-    commandManager->execute(command);
+//    GroupCommand *command = new GroupCommand(scene, model, commandManager);
+//    commandManager->execute(command);
 }
 
 void Gui::triggerUnGrouping() {
-    UngroupCommand *command = new UngroupCommand(scene, model, commandManager);
-    commandManager->execute(command);
+//    UngroupCommand *command = new UngroupCommand(scene, model, commandManager);
+//    commandManager->execute(command);
 }
 
 void Gui::triggerDeleting() {
-    DeleteCommand *command = new DeleteCommand(scene, model, commandManager);
-    commandManager->execute(command);
+//    DeleteCommand *command = new DeleteCommand(scene, model, commandManager);
+//    commandManager->execute(command);
 }
 
 void Gui::triggerMoveUp() {
-    MoveUpCommand *command = new MoveUpCommand(model);
-    commandManager->execute(command);
-    model->printState();
+//    MoveUpCommand *command = new MoveUpCommand(model);
+//    commandManager->execute(command);
+//    model->printState();
 }
 
 void Gui::triggerMoveDown() {

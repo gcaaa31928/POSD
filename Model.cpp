@@ -97,7 +97,7 @@ void Model::clearSceneItems() {
 void Model::redrawGraphics() {
     scene->clear();
     for (int i = graphics_list.size() - 1; i >= 0; i--) {
-        PaintVisitor paintVisitor(commandManager);
+        PaintVisitor paintVisitor(this);
         paintVisitor.setScene(scene);
         graphics_list[i]->accept(paintVisitor);
         paintVisitor.Draw();

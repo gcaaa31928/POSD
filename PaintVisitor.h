@@ -13,32 +13,17 @@
 #include <QGraphicsScene>
 #include <algorithm>
 
+class Model;
 class PaintVisitor : public GraphicsVisitor {
 public:
-    PaintVisitor(CommandManager *cm):commandManager(cm) { }
+    PaintVisitor(Model *model): _model(model){ }
 
-    void visitSimpleGraphics(SimpleGraphics *s) {
-        GraphicsItemFactory *factory = new GraphicsItemFactory(commandManager);
-        QPen pen;
-        pen.setColor(Qt::blue);
-        QGraphicsItem *item = factory->createGraphicsItemBySimpleGraphics(s, pen);
-        items.push_back(item);
 
-    }
+    void visitSimpleGraphics(SimpleGraphics *s);
 
-    void visitCompositeGraphics(CompositeGraphics *c) {
-        GraphicsItemFactory *factory = new GraphicsItemFactory(commandManager);
-        QGraphicsItem *item = factory->createGraphicsItemByCompositeGraphics(c);
-        items.push_back(item);
-    }
+    void visitCompositeGraphics(CompositeGraphics *c);
 
-    void Draw() {
-        reverse(items.begin(), items.end());
-        for (int i = 0; i < items.size(); i++) {
-            scene->addItem(items[i]);
-            scene->update();
-        }
-    }
+    void Draw();
 
     void clearState() {
         items.clear();
@@ -51,7 +36,8 @@ public:
 private:
     vector<QGraphicsItem *> items;
     QGraphicsScene *scene;
-    CommandManager *commandManager;
+    Model *_model;
+
 };
 
 

@@ -9,6 +9,13 @@
 #include "Graphics.h"
 #include "CustomScene.h"
 #include "Subject.h"
+#include "AddCommand.h"
+#include "GroupCommand.h"
+#include "UngroupCommand.h"
+#include "DeleteCommand.h"
+#include "MoveUpCommand.h"
+#include "MoveDownCommand.h"
+#include "MoveCommand.h"
 
 using namespace std;
 class CustomScene;
@@ -42,6 +49,7 @@ public:
     void setCommandManager(CommandManager *cm) {
         commandManager = cm;
     }
+
 
 private:
     vector<Graphics *> graphics_list;

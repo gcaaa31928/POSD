@@ -29,7 +29,7 @@ using namespace std;
 
 class SquarePainter : public Painter {
 public:
-    SquarePainter(int x,int y,int length, Graphics *g,CommandManager *cm);
+    SquarePainter(int x,int y,int length, Graphics *g);
 
     virtual void paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
                        QWidget *widget); ///< must be re-implemented here to pain the box on the paint-event

@@ -9,12 +9,11 @@
 #include "typeinfo"
 #include "DescriptionVisitor.h"
 
-Painter::Painter(CommandManager *cm) : _outterborderColor(Qt::blue),
-                                       _originColor(Qt::blue),
-                                       _outterborderPen(),
-                                       _dragStart(0, 0),
-                                       _gridSpace(10),
-                                       commandManager(cm) {
+Painter::Painter() : _outterborderColor(Qt::blue),
+                     _originColor(Qt::blue),
+                     _outterborderPen(),
+                     _dragStart(0, 0),
+                     _gridSpace(10) {
     _originColor = Qt::black;
     _outterborderColor = Qt::black;
     _filledColor = QColor(110, 161, 250);
@@ -59,7 +58,7 @@ void Painter::handleMousePicked(QPointF deltaPoint, QPointF pos) {
             }
             this->getGraphics()->unpickAllChild();
             for (Graphics *parent = graphics->getParent(); parent != 0; parent = parent->getParent()) {
-                cout<<parent<<endl;
+                cout << parent << endl;
                 parent->GetPainter()->set_deepSelected(true);
             }
             this->_deepSelected = true;

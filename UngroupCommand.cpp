@@ -3,6 +3,21 @@
 //
 
 #include "UngroupCommand.h"
+#include "Model.h"
+
+UngroupCommand::UngroupCommand(QGraphicsScene *s, Model *m):Command() {
+    int selectedCount = 0;
+    vector<Graphics *> list = m->getGraphicsList();
+    for (int i = 0; i < list.size(); i++) {
+        if (list[i]->GetPainter()->is_selected()) {
+            if (typeid(*list[i]) == typeid(CompositeGraphics)) {
+                graphics_list.push_back(dynamic_cast<CompositeGraphics *>(list[i]));
+            }
+        }
+    }
+    this->model = m;
+    this->scene = s;
+}
 
 void UngroupCommand::execute() {
     for (int i = 0; i < graphics_list.size(); i++) {
@@ -12,12 +27,7 @@ void UngroupCommand::execute() {
         for (int j = 0; j < child.size(); j++) {
             model->addGraphics(child[j]);
         }
-//        scene->removeItem(graphics_list[i]->GetPainter());
     }
-    model->redrawGraphics();
-//    scene->update();
-    model->printState();
-
 }
 
 void UngroupCommand::unexecute() {
@@ -28,9 +38,5 @@ void UngroupCommand::unexecute() {
         for (int j = 0; j < child.size(); j++) {
             model->removeGraphics(child[j]);
         }
-//        scene->addItem(graphics_list[i]->GetPainter());
     }
-    model->redrawGraphics();
-//    scene->update();
-    model->printState();
 }

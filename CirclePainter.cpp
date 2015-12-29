@@ -5,7 +5,7 @@
 #include "CirclePainter.h"
 
 
-CirclePainter::CirclePainter(int x, int y, int r, Graphics *g, CommandManager *cm) : Painter(cm) {
+CirclePainter::CirclePainter(int x, int y, int r, Graphics *g) : Painter() {
     _x = x - r;
     _y = y - r;
     _width = 2 * r;

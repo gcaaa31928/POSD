@@ -28,7 +28,7 @@ using namespace std;
 
 class CirclePainter : public Painter {
 public:
-    CirclePainter(int x,int y,int r, Graphics *g, CommandManager *cm);
+    CirclePainter(int x,int y,int r, Graphics *g);
 
     virtual void paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
                        QWidget *widget); ///< must be re-implemented here to pain the box on the paint-event

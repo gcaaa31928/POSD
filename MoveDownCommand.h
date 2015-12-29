@@ -9,12 +9,12 @@
 
 #include "Command.h"
 #include "Painter.h"
-#include "Model.h"
 #include "SimpleGraphics.h"
 #include "GraphicsItemFactory.h"
 #include "DescriptionVisitor.h"
 #include <QGraphicsScene>
 
+class Model;
 class MoveDownCommand : public Command {
 private:
 
@@ -25,15 +25,7 @@ private:
     int x;
     int y;
 public:
-    MoveDownCommand(Model *m):Command() {
-        model = m;
-        parentGraphics = m->getDeepGraphics();
-        if (parentGraphics == 0) {
-            failed = true;
-            return;
-        }
-        selectedGraphics = parentGraphics->getChildSelectedGraphics();
-    }
+    MoveDownCommand(Model *m);
 
     virtual ~MoveDownCommand() { };
 

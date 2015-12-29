@@ -3,6 +3,7 @@
 //
 
 #include "AddCommand.h"
+#include "Model.h"
 
 void AddCommand::execute() {
     model->addGraphics(graphics);

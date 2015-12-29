@@ -8,12 +8,12 @@
 
 #include "Command.h"
 #include "Painter.h"
-#include "Model.h"
 #include "SimpleGraphics.h"
 #include "GraphicsItemFactory.h"
 #include "DescriptionVisitor.h"
 #include <QGraphicsScene>
 
+class Model;
 class MoveUpCommand : public Command {
 private:
 
@@ -24,15 +24,7 @@ private:
     int x;
     int y;
 public:
-    MoveUpCommand(Model *m):Command() {
-        model = m;
-        parentGraphics = m->getDeepGraphics();
-        if (parentGraphics == 0) {
-            failed = true;
-            return;
-        }
-        selectedGraphics = parentGraphics->getChildSelectedGraphics();
-    }
+    MoveUpCommand(Model *m);
 
     virtual ~MoveUpCommand() { };
 
