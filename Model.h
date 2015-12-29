@@ -76,6 +76,8 @@ public:
 
     void clearCommandManagerState() {
         commandManager->clear();
+        _redrawSign = false;
+        this->notifyObservers();
     }
 
     void addGraphics(SimpleGraphics *simpleGraphics) {

@@ -35,7 +35,7 @@ Gui::Gui() {
     QString title = "Sample";
     setWindowTitle(title);
     setMinimumSize(800, 600);
-    CustomScene* scene = dynamic_cast<CustomScene*>(this->scene);
+    CustomScene *scene = dynamic_cast<CustomScene *>(this->scene);
     scene->updateButtonState(model);
     Display();
 
@@ -55,7 +55,7 @@ void Gui::CreateView() {
     graphicsView->setObjectName(gView);
 
     scene = new CustomScene(model, this);//�޲zpainter item������
-    model->setScene((CustomScene *)scene);
+    model->setScene((CustomScene *) scene);
     scene->setSceneRect(0, 0, 800, 600);
     graphicsView->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     graphicsView->setScene(scene);
@@ -69,12 +69,12 @@ void Gui::CreateActions() {
     aboutDeveloper = new QAction("aboutDeveloper", widget);
     loadFile = new QAction("Load File", widget);
     QIcon loadFileIcon("loadFile.png");
-    loadFileIcon.addPixmap(QPixmap("loadFile_disable.png"), QIcon::Disabled );
+    loadFileIcon.addPixmap(QPixmap("loadFile_disable.png"), QIcon::Disabled);
     loadFile->setIcon(loadFileIcon);
 
     saveFile = new QAction("Save File", widget);
     QIcon saveFileIcon("saveFile.png");
-    saveFileIcon.addPixmap(QPixmap("saveFile_disable.png"), QIcon::Disabled );
+    saveFileIcon.addPixmap(QPixmap("saveFile_disable.png"), QIcon::Disabled);
     saveFile->setIcon(saveFileIcon);
 
     drawCircle = new QAction("createCircle", widget);
@@ -86,37 +86,37 @@ void Gui::CreateActions() {
 
     undo = new QAction("Undo", widget);
     QIcon undoIcon("undo.png");
-    undoIcon.addPixmap(QPixmap("undo_disable.png"), QIcon::Disabled );
+    undoIcon.addPixmap(QPixmap("undo_disable.png"), QIcon::Disabled);
     undo->setIcon(undoIcon);
 
     redo = new QAction("Redo", widget);
     QIcon redoIcon("redo.png");
-    redoIcon.addPixmap(QPixmap("redo_disable.png"), QIcon::Disabled );
+    redoIcon.addPixmap(QPixmap("redo_disable.png"), QIcon::Disabled);
     redo->setIcon(redoIcon);
 
     group = new QAction("Group", widget);
     QIcon groupIcon("group.png");
-    groupIcon.addPixmap(QPixmap("group_disable.png"), QIcon::Disabled );
+    groupIcon.addPixmap(QPixmap("group_disable.png"), QIcon::Disabled);
     group->setIcon(groupIcon);
 
     ungroup = new QAction("Ungroup", widget);
     QIcon ungroupIcon("ungroup.png");
-    ungroupIcon.addPixmap(QPixmap("ungroup_disable.png"), QIcon::Disabled );
+    ungroupIcon.addPixmap(QPixmap("ungroup_disable.png"), QIcon::Disabled);
     ungroup->setIcon(ungroupIcon);
 
     deleteAction = new QAction("Ungroup", widget);
     QIcon deleteIcon("delete.png");
-    deleteIcon.addPixmap(QPixmap("delete_disable.png"), QIcon::Disabled );
+    deleteIcon.addPixmap(QPixmap("delete_disable.png"), QIcon::Disabled);
     deleteAction->setIcon(deleteIcon);
 
     moveUp = new QAction("MoveUp", widget);
     QIcon moveUpIcon("moveUp.png");
-    moveUpIcon.addPixmap(QPixmap("moveUp_disable.png"), QIcon::Disabled );
+    moveUpIcon.addPixmap(QPixmap("moveUp_disable.png"), QIcon::Disabled);
     moveUp->setIcon(moveUpIcon);
 
     moveDown = new QAction("MoveDown", widget);
     QIcon moveDownIcon("moveDown.png");
-    moveDownIcon.addPixmap(QPixmap("moveDown_disable.png"), QIcon::Disabled );
+    moveDownIcon.addPixmap(QPixmap("moveDown_disable.png"), QIcon::Disabled);
     moveDown->setIcon(moveDownIcon);
 }
 
@@ -209,7 +209,7 @@ string Gui::saveFileDialog() {
     return "";
 }
 
-string Gui::loadFileDialog(){
+string Gui::loadFileDialog() {
 
     if (model->isChanged()) {
         int rb = QMessageBox::question(NULL, "你有未儲存的圖形", "是否先進行儲存?", QMessageBox::Yes | QMessageBox::No,
@@ -228,11 +228,11 @@ string Gui::loadFileDialog(){
     else {
         return "";
     }
-    GraphicsFactory *graphicsFactory = new GraphicsFactory();
 
-    scene->clear();
+    GraphicsFactory *graphicsFactory = new GraphicsFactory();
     DescriptionVisitor dv;
     vector<Graphics *> gs = graphicsFactory->buildMultipleGraphicsFromFile(fileName.c_str());
+    scene->clear();
     model->clearGraphics();
     model->addMultipleGraphics(gs);
     for (int i = 0; i < gs.size(); i++) {
@@ -241,7 +241,7 @@ string Gui::loadFileDialog(){
         gs[i]->accept(paintVisitor);
         paintVisitor.Draw();
     }
-
+    model->clearCommandManagerState();
 
     return "";
 }
