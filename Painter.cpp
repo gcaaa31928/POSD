@@ -8,6 +8,7 @@
 #include "MoveCommand.h"
 #include "typeinfo"
 #include "DescriptionVisitor.h"
+#include "Model.h"
 
 Painter::Painter() : _outterborderColor(Qt::blue),
                      _originColor(Qt::blue),
@@ -87,8 +88,7 @@ void Painter::mouseReleaseEvent(QGraphicsSceneMouseEvent *event) {
         _endLocation = _location;
         dp = (_endLocation - _startLocation);
         this->graphics->backAllChildToStartLocation();
-        MoveCommand *command = new MoveCommand(this->graphics, this, dp.x(), dp.y());
-        commandManager->execute(command);
+        model->moveGraphicsToPoint(this->graphics, this, dp);
         this->setPos(_location);
     }
     this->handleMousePicked(dp, event->pos());
