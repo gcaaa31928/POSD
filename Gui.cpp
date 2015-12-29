@@ -203,8 +203,6 @@ string Gui::saveFileDialog() {
         fp.open(fileName.c_str(), ios::out);
         fp << fileContent;
         fp.close();
-        commandManager->clear();
-        cout << "Save File" << endl;
     }
     return "";
 }
