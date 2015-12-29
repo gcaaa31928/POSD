@@ -14,16 +14,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1fc4e33f-67d6-4b21-b4cf-b4ff350ca3bf" name="Default" comment="* init">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AddCommand.cpp" afterPath="$PROJECT_DIR$/AddCommand.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CustomScene.cpp" afterPath="$PROJECT_DIR$/CustomScene.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeleteCommand.cpp" afterPath="$PROJECT_DIR$/DeleteCommand.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GroupCommand.cpp" afterPath="$PROJECT_DIR$/GroupCommand.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gui.cpp" afterPath="$PROJECT_DIR$/Gui.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model.cpp" afterPath="$PROJECT_DIR$/Model.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model.h" afterPath="$PROJECT_DIR$/Model.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Painter.cpp" afterPath="$PROJECT_DIR$/Painter.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UngroupCommand.cpp" afterPath="$PROJECT_DIR$/UngroupCommand.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/g7.txt" afterPath="$PROJECT_DIR$/bin/g7.txt" />
     </list>
     <list id="a8077400-86a0-44d5-a1ce-3fc247e5f8ed" name="Failed commit: Default" comment="* init" />
     <ignored path="HW5.iws" />
@@ -62,8 +53,8 @@
           <file leaf-file-name="DeleteCommand.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/DeleteCommand.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.27503738">
-                  <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+                <state vertical-scroll-proportion="0.93273544">
+                  <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
                   <folding>
                     <element signature="e#39#65#0" expanded="true" />
                   </folding>
@@ -150,8 +141,18 @@
           <file leaf-file-name="Gui.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Gui.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.49177876">
-                  <caret line="186" column="57" selection-start-line="186" selection-start-column="57" selection-end-line="186" selection-end-column="57" />
+                <state vertical-scroll-proportion="0.88041854">
+                  <caret line="115" column="34" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="qaction.h" pinned="false" current-in-tab="false">
+            <entry file="file://F:/Qt/5.5/mingw492_32/include/QtWidgets/qaction.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="180" column="21" selection-start-line="180" selection-start-column="21" selection-end-line="180" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -430,21 +431,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Command.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CommandManager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CommandManager.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -838,16 +824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DeleteCommand.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27503738">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding>
-            <element signature="e#39#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://F:/Qt/5.5/mingw492_32/include/QtWidgets/qmessagebox.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
@@ -874,10 +850,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bin/group.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeleteCommand.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.93273544">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding>
+            <element signature="e#39#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Qt/5.5/mingw492_32/include/QtWidgets/qaction.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="180" column="21" selection-start-line="180" selection-start-column="21" selection-end-line="180" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gui.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49177876">
-          <caret line="186" column="57" selection-start-line="186" selection-start-column="57" selection-end-line="186" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.88041854">
+          <caret line="115" column="34" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
           <folding />
         </state>
       </provider>

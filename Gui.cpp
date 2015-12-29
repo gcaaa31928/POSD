@@ -66,29 +66,56 @@ void Gui::CreateView() {
 void Gui::CreateActions() {
     aboutDeveloper = new QAction("aboutDeveloper", widget);
     loadFile = new QAction("Load File", widget);
-    loadFile->setIcon(QIcon("loadFile.png"));
+    QIcon loadFileIcon("loadFile.png");
+    loadFileIcon.addPixmap(QPixmap("loadFile_disable.png"), QIcon::Disabled );
+    loadFile->setIcon(loadFileIcon);
+
     saveFile = new QAction("Save File", widget);
-    saveFile->setIcon(QIcon("saveFile.png"));
+    QIcon saveFileIcon("saveFile.png");
+    saveFileIcon.addPixmap(QPixmap("saveFile_disable.png"), QIcon::Disabled );
+    saveFile->setIcon(saveFileIcon);
+
     drawCircle = new QAction("createCircle", widget);
     drawCircle->setIcon(QIcon("circle.png"));
     drawSquare = new QAction("createSquare", widget);
     drawSquare->setIcon(QIcon("square.png"));
     drawRectangle = new QAction("createRectangle", widget);
     drawRectangle->setIcon(QIcon("rectangle.png"));
+
     undo = new QAction("Undo", widget);
-    undo->setIcon(QIcon("undo.png"));
+    QIcon undoIcon("undo.png");
+    undoIcon.addPixmap(QPixmap("undo_disable.png"), QIcon::Disabled );
+    undo->setIcon(undoIcon);
+
     redo = new QAction("Redo", widget);
-    redo->setIcon(QIcon("redo.png"));
+    QIcon redoIcon("redo.png");
+    redoIcon.addPixmap(QPixmap("redo_disable.png"), QIcon::Disabled );
+    redo->setIcon(redoIcon);
+
     group = new QAction("Group", widget);
-    group->setIcon(QIcon("group.png"));
+    QIcon groupIcon("group.png");
+    groupIcon.addPixmap(QPixmap("group_disable.png"), QIcon::Disabled );
+    group->setIcon(groupIcon);
+
     ungroup = new QAction("Ungroup", widget);
-    ungroup->setIcon(QIcon("ungroup.png"));
+    QIcon ungroupIcon("ungroup.png");
+    ungroupIcon.addPixmap(QPixmap("ungroup_disable.png"), QIcon::Disabled );
+    ungroup->setIcon(ungroupIcon);
+
     deleteAction = new QAction("Ungroup", widget);
-    deleteAction->setIcon(QIcon("delete.png"));
+    QIcon deleteIcon("delete.png");
+    deleteIcon.addPixmap(QPixmap("delete_disable.png"), QIcon::Disabled );
+    deleteAction->setIcon(deleteIcon);
+
     moveUp = new QAction("MoveUp", widget);
-    moveUp->setIcon(QIcon("moveUp.png"));
+    QIcon moveUpIcon("moveUp.png");
+    moveUpIcon.addPixmap(QPixmap("moveUp_disable.png"), QIcon::Disabled );
+    moveUp->setIcon(moveUpIcon);
+
     moveDown = new QAction("MoveDown", widget);
-    moveDown->setIcon(QIcon("moveDown.png"));
+    QIcon moveDownIcon("moveDown.png");
+    moveDownIcon.addPixmap(QPixmap("moveDown_disable.png"), QIcon::Disabled );
+    moveDown->setIcon(moveDownIcon);
 }
 
 void Gui::SetActionConnection() {
