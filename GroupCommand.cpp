@@ -30,14 +30,14 @@ void GroupCommand::execute() {
         picked[i]->unpickAllChild();
     }
     graphics->unpickAllChild();
-    model->addGraphics(graphics);
+    model->pushGraphics(graphics);
     model->redrawGraphics();
     model->printState();
 }
 
 void GroupCommand::unexecute() {
     for (int i=0;i<picked.size();i++) {
-        model->addGraphics(picked[i]);
+        model->pushGraphics(picked[i]);
     }
     model->removeGraphics(graphics);
     model->redrawGraphics();

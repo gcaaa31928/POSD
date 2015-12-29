@@ -35,7 +35,6 @@ void CustomScene::update(void *pVoid) {
 
     this->clear();
     vector<Graphics *> graphics_list = model->getGraphicsList();
-    CommandManager *commandManager = model->getCommandManager();
     for (int i = graphics_list.size() - 1; i >= 0; i--) {
         PaintVisitor paintVisitor(model);
         paintVisitor.setScene(this);

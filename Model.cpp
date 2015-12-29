@@ -6,7 +6,7 @@
 #include "DescriptionVisitor.h"
 #include "PaintVisitor.h"
 
-void Model::addGraphics(Graphics *graphics) {
+void Model::pushGraphics(Graphics *graphics) {
     graphics_list.insert(graphics_list.begin(), graphics);
 //    graphics_list.push_back(graphics);
 }
@@ -113,3 +113,4 @@ Graphics *Model::getDeepGraphics() {
     }
     return 0;
 }
+

@@ -180,7 +180,16 @@ string Gui::saveFileDialog() {
     return "";
 }
 
-string Gui::loadFileDialog() {
+string Gui::loadFileDialog(){
+
+    if (model->isChanged()) {
+        int rb = QMessageBox::question(NULL, "你有未儲存的圖形", "是否先進行儲存?", QMessageBox::Yes | QMessageBox::No,
+                                       QMessageBox::Yes);
+        if (rb == (int) QMessageBox::Yes) {
+            this->saveFileDialog();
+        }
+    }
+
     QString fn = QFileDialog::getOpenFileName(this, tr("Open File..."),
                                               QString(), tr("Txt (*.txt)"));
     string fileName;
@@ -211,6 +220,7 @@ string Gui::loadFileDialog() {
 void Gui::createRectangle() {
     SimpleGraphics *sg = new SimpleGraphics(new Rectangle(400, 300, 100, 50));
     model->addGraphics(sg);
+
 }
 
 void Gui::createCircle() {

@@ -6,7 +6,7 @@
 #include "Model.h"
 
 void AddCommand::execute() {
-    model->addGraphics(graphics);
+    model->pushGraphics(graphics);
 //    scene->addItem(item);
 //    scene->update();
     model->redrawGraphics();

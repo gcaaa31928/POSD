@@ -29,7 +29,7 @@ void DeleteCommand::execute() {
 
 void DeleteCommand::unexecute() {
     for (int i = 0; i < graphics_list.size(); i++) {
-        model->addGraphics(graphics_list[i]);
+        model->pushGraphics(graphics_list[i]);
         vector<Painter *> painters = graphics_list[i]->getAllChildPainter();
         std::reverse(painters.begin(), painters.end());
         for (int j = 0; j < painters.size(); j++) {

@@ -25,7 +25,7 @@ void UngroupCommand::execute() {
         model->removeGraphics(graphics_list[i]);
         vector<Graphics *> child = graphics_list[i]->getGraphics();
         for (int j = 0; j < child.size(); j++) {
-            model->addGraphics(child[j]);
+            model->pushGraphics(child[j]);
         }
     }
 }
@@ -33,7 +33,7 @@ void UngroupCommand::execute() {
 void UngroupCommand::unexecute() {
     for (int i = 0; i < graphics_list.size(); i++) {
         graphics_list[i]->unpickAllChild();
-        model->addGraphics(graphics_list[i]);
+        model->pushGraphics(graphics_list[i]);
         vector<Graphics *> child = graphics_list[i]->getGraphics();
         for (int j = 0; j < child.size(); j++) {
             model->removeGraphics(child[j]);

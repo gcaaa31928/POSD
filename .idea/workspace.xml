@@ -13,8 +13,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fc4e33f-67d6-4b21-b4cf-b4ff350ca3bf" name="Default" comment="* init">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GraphicsItemFactory.cpp" afterPath="$PROJECT_DIR$/GraphicsItemFactory.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AddCommand.cpp" afterPath="$PROJECT_DIR$/AddCommand.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CustomScene.cpp" afterPath="$PROJECT_DIR$/CustomScene.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeleteCommand.cpp" afterPath="$PROJECT_DIR$/DeleteCommand.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GroupCommand.cpp" afterPath="$PROJECT_DIR$/GroupCommand.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gui.cpp" afterPath="$PROJECT_DIR$/Gui.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model.cpp" afterPath="$PROJECT_DIR$/Model.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model.h" afterPath="$PROJECT_DIR$/Model.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Painter.cpp" afterPath="$PROJECT_DIR$/Painter.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UngroupCommand.cpp" afterPath="$PROJECT_DIR$/UngroupCommand.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/g7.txt" afterPath="$PROJECT_DIR$/bin/g7.txt" />
     </list>
     <list id="a8077400-86a0-44d5-a1ce-3fc247e5f8ed" name="Failed commit: Default" comment="* init" />
     <ignored path="HW5.iws" />
@@ -35,7 +44,7 @@
     <favorites_list name="HW5" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.36369348">
+    <splitter split-orientation="horizontal" split-proportion="0.125">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="DeleteCommand.h" pinned="false" current-in-tab="false">
@@ -50,11 +59,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="DeleteCommand.cpp" pinned="false" current-in-tab="false">
+          <file leaf-file-name="DeleteCommand.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/DeleteCommand.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+                <state vertical-scroll-proportion="0.27503738">
+                  <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
                   <folding>
                     <element signature="e#39#65#0" expanded="true" />
                   </folding>
@@ -100,10 +109,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MoveDownCommand.cpp" pinned="false" current-in-tab="true">
+          <file leaf-file-name="MoveDownCommand.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/MoveDownCommand.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.35874438">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
                   <folding>
                     <element signature="e#40#68#0" expanded="true" />
@@ -116,55 +125,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Painter.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Painter.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
-                  <folding>
-                    <element signature="e#111#130#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MoveCommand.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/MoveCommand.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Painter.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Painter.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="79" column="78" selection-start-line="79" selection-start-column="78" selection-end-line="79" selection-end-column="78" />
-                  <folding>
-                    <element signature="e#40#56#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Controller.h" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Controller.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.23916294">
-                  <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="Model.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Model.h">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+                  <caret line="143" column="9" selection-start-line="143" selection-start-column="9" selection-end-line="143" selection-end-column="9" />
                   <folding>
                     <element signature="e#106#123#0" expanded="true" />
                   </folding>
@@ -172,59 +137,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="CustomScene.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/CustomScene.cpp">
+          <file leaf-file-name="Model.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Model.cpp">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#40#64#0" expanded="true" />
-                  </folding>
+                  <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="CustomScene.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/CustomScene.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-                  <folding>
-                    <element signature="e#120#157#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="GraphicsItemFactory.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/GraphicsItemFactory.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-5.133333">
-                  <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-                  <folding>
-                    <element signature="e#40#58#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MoveCommand.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/MoveCommand.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-                  <folding>
-                    <element signature="e#119#138#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Gui.cpp" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Gui.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Gui.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="244" column="22" selection-start-line="244" selection-start-column="22" selection-end-line="244" selection-end-column="22" />
+                <state vertical-scroll-proportion="0.49177876">
+                  <caret line="186" column="57" selection-start-line="186" selection-start-column="57" selection-end-line="186" selection-end-column="57" />
                   <folding />
                 </state>
               </provider>
@@ -256,7 +183,6 @@
         <option value="$PROJECT_DIR$/Views.h" />
         <option value="$PROJECT_DIR$/Controller.h" />
         <option value="$PROJECT_DIR$/Controller.cpp" />
-        <option value="$PROJECT_DIR$/AddCommand.cpp" />
         <option value="$PROJECT_DIR$/GraphicsItemFactory.h" />
         <option value="$PROJECT_DIR$/PaintVisitor.h" />
         <option value="$PROJECT_DIR$/PaintVisitor.cpp" />
@@ -268,24 +194,25 @@
         <option value="$PROJECT_DIR$/SquarePainter.cpp" />
         <option value="$PROJECT_DIR$/CirclePainter.cpp" />
         <option value="$PROJECT_DIR$/Painter.h" />
-        <option value="$PROJECT_DIR$/Model.cpp" />
-        <option value="$PROJECT_DIR$/GroupCommand.cpp" />
         <option value="$PROJECT_DIR$/GroupCommand.h" />
         <option value="$PROJECT_DIR$/UngroupCommand.h" />
-        <option value="$PROJECT_DIR$/UngroupCommand.cpp" />
         <option value="$PROJECT_DIR$/DeleteCommand.h" />
-        <option value="$PROJECT_DIR$/DeleteCommand.cpp" />
         <option value="$PROJECT_DIR$/MoveUpCommand.h" />
         <option value="$PROJECT_DIR$/MoveUpCommand.cpp" />
         <option value="$PROJECT_DIR$/MoveDownCommand.h" />
         <option value="$PROJECT_DIR$/MoveDownCommand.cpp" />
         <option value="$PROJECT_DIR$/MoveCommand.h" />
-        <option value="$PROJECT_DIR$/Model.h" />
         <option value="$PROJECT_DIR$/CustomScene.h" />
-        <option value="$PROJECT_DIR$/CustomScene.cpp" />
-        <option value="$PROJECT_DIR$/Gui.cpp" />
-        <option value="$PROJECT_DIR$/Painter.cpp" />
         <option value="$PROJECT_DIR$/GraphicsItemFactory.cpp" />
+        <option value="$PROJECT_DIR$/CustomScene.cpp" />
+        <option value="$PROJECT_DIR$/AddCommand.cpp" />
+        <option value="$PROJECT_DIR$/GroupCommand.cpp" />
+        <option value="$PROJECT_DIR$/UngroupCommand.cpp" />
+        <option value="$PROJECT_DIR$/DeleteCommand.cpp" />
+        <option value="$PROJECT_DIR$/Painter.cpp" />
+        <option value="$PROJECT_DIR$/Model.cpp" />
+        <option value="$PROJECT_DIR$/Model.h" />
+        <option value="$PROJECT_DIR$/Gui.cpp" />
       </list>
     </option>
   </component>
@@ -366,7 +293,7 @@
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
-    <property name="SearchEverywhereHistoryKey" value="gra&#9;FILE&#9;file://D:/homework/HW8/HW8/GraphicsItemFactory.cpp&#10;cont&#9;FILE&#9;file://D:/homework/HW8/HW8/Controller.h&#10;paint.c&#9;FILE&#9;file://D:/homework/HW8/HW8/Painter.cpp&#10;paint&#9;FILE&#9;file://D:/homework/HW8/HW8/Painter.h&#10;gui.&#9;FILE&#9;file://D:/homework/HW8/HW8/Gui.cpp&#10;cust&#9;FILE&#9;file://D:/homework/HW8/HW8/CustomScene.cpp&#10;model.h&#9;FILE&#9;file://D:/homework/HW8/HW8/Model.h&#10;movecommand&#9;FILE&#9;file://D:/homework/HW8/HW8/MoveCommand.cpp&#10;movedown&#9;FILE&#9;file://D:/homework/HW8/HW8/MoveDownCommand.cpp&#10;model&#9;FILE&#9;file://D:/homework/HW8/HW8/Model.h&#10;moveup&#9;FILE&#9;file://D:/homework/HW8/HW8/MoveUpCommand.cpp&#10;gui&#9;FILE&#9;file://D:/homework/HW8/HW8/Gui.cpp&#10;delete&#9;FILE&#9;file://D:/homework/HW8/HW8/DeleteCommand.cpp&#10;ungrou&#9;FILE&#9;file://D:/homework/HW8/HW8/UngroupCommand.cpp&#10;UngroupCommand&#9;FILE&#9;file://D:/homework/HW8/HW8/UngroupCommand.h&#10;painter.cpp&#9;FILE&#9;file://D:/homework/HW8/HW8/Painter.cpp&#10;painter.h&#9;FILE&#9;file://D:/homework/HW8/HW8/Painter.h&#10;rect&#9;FILE&#9;file://D:/homework/HW8/HW8/RectanglePainter.cpp&#10;s&#9;FILE&#9;file://D:/homework/HW8/HW8/SquarePainter.cpp&#10;square&#9;FILE&#9;file://D:/homework/HW8/HW8/SquarePainter.cpp&#10;circle&#9;FILE&#9;file://D:/homework/HW8/HW8/CirclePainter.cpp&#10;painter&#9;FILE&#9;file://D:/homework/HW8/HW8/Painter.h&#10;paintvis&#9;FILE&#9;file://D:/homework/HW8/HW8/PaintVisitor.cpp&#10;add&#9;FILE&#9;file://D:/homework/HW8/HW8/AddCommand.cpp&#10;addc&#9;FILE&#9;file://D:/homework/HW8/HW8/AddCommand.h&#10;group&#9;FILE&#9;file://D:/homework/HW8/HW8/GroupCommand.cpp&#10;pa&#9;FILE&#9;file://D:/homework/HW8/HW8/Painter.h&#10;contr&#9;FILE&#9;file://D:/homework/HW8/HW8/Controller.h&#10;custo&#9;FILE&#9;file://D:/homework/HW8/HW8/CustomScene.cpp&#10;cmakeli&#9;FILE&#9;file://D:/homework/HW8/HW8/CMakeLists.txt&#10;addcom&#9;FILE&#9;file://D:/homework/HW6/HW6/AddCommand.h&#10;model.&#9;FILE&#9;file:///home/red/Homework/HW6/Model.cpp&#10;ungr&#9;FILE&#9;file:///home/red/Homework/HW6/UngroupCommand.cpp&#10;comp&#9;FILE&#9;file:///home/red/Homework/HW6/CompositeGraphics.cpp&#10;graphics&#9;FILE&#9;file:///home/red/Homework/HW6/Graphics.h&#10;simp&#9;FILE&#9;file:///home/red/Homework/HW6/SimpleGraphics.h&#10;compos&#9;FILE&#9;file:///home/red/Homework/HW6/CompositeGraphics.cpp&#10;graphi&#9;FILE&#9;file:///home/red/Homework/HW6/Graphics.h&#10;compo&#9;FILE&#9;file:///home/red/Homework/HW6/CompositeGraphics.cpp&#10;commandman&#9;FILE&#9;file:///home/red/Homework/HW6/CommandManager.cpp&#10;graphics.cpp&#9;FILE&#9;file:///home/red/Homework/HW6/Graphics.cpp&#10;com&#9;FILE&#9;file:///home/red/Homework/HW6/CompositeGraphics.h&#10;movecomm&#9;FILE&#9;file:///home/red/Homework/HW6/MoveCommand.h&#10;movecom&#9;FILE&#9;file:///home/red/Homework/HW6/MoveCommand.cpp&#10;command&#9;FILE&#9;file:///home/red/Homework/HW6/CommandManager.h&#10;gui.cp&#9;FILE&#9;file:///home/red/Homework/HW6/Gui.cpp&#10;command.cpp&#9;FILE&#9;file:///home/red/Homework/HW6/Command.cpp&#10;commandma&#9;FILE&#9;file:///home/red/Homework/HW6/CommandManager.cpp&#10;coma&#9;FILE&#9;file:///home/red/Homework/HW6/CommandManager.cpp&#10;graphic&#9;FILE&#9;file:///home/red/Homework/HW6/GraphicsItemFactory.cpp" />
+    <property name="SearchEverywhereHistoryKey" value="gui.cpp&#9;FILE&#9;file://D:/homework/HW8/HW8/Gui.cpp&#10;model&#9;FILE&#9;file://D:/homework/HW8/HW8/Model.cpp&#10;mode&#9;FILE&#9;file://D:/homework/HW8/HW8/Model.cpp&#10;painter&#9;FILE&#9;file://D:/homework/HW8/HW8/Painter.cpp&#10;ungrou&#9;FILE&#9;file://D:/homework/HW8/HW8/UngroupCommand.cpp&#10;cust&#9;FILE&#9;file://D:/homework/HW8/HW8/CustomScene.cpp&#10;Gui.cp&#9;FILE&#9;file://D:/homework/HW8/HW8/Gui.cpp&#10;gui.cp&#9;FILE&#9;file://D:/homework/HW8/HW8/Gui.cpp&#10;custom&#9;FILE&#9;file://D:/homework/HW8/HW8/CustomScene.cpp&#10;model.h&#9;FILE&#9;file://D:/homework/HW8/HW8/Model.h&#10;gra&#9;FILE&#9;file://D:/homework/HW8/HW8/GraphicsItemFactory.cpp&#10;cont&#9;FILE&#9;file://D:/homework/HW8/HW8/Controller.h&#10;paint.c&#9;FILE&#9;file://D:/homework/HW8/HW8/Painter.cpp&#10;paint&#9;FILE&#9;file://D:/homework/HW8/HW8/Painter.h&#10;gui.&#9;FILE&#9;file://D:/homework/HW8/HW8/Gui.cpp&#10;movecommand&#9;FILE&#9;file://D:/homework/HW8/HW8/MoveCommand.cpp&#10;movedown&#9;FILE&#9;file://D:/homework/HW8/HW8/MoveDownCommand.cpp&#10;moveup&#9;FILE&#9;file://D:/homework/HW8/HW8/MoveUpCommand.cpp&#10;gui&#9;FILE&#9;file://D:/homework/HW8/HW8/Gui.cpp&#10;delete&#9;FILE&#9;file://D:/homework/HW8/HW8/DeleteCommand.cpp&#10;UngroupCommand&#9;FILE&#9;file://D:/homework/HW8/HW8/UngroupCommand.h&#10;painter.cpp&#9;FILE&#9;file://D:/homework/HW8/HW8/Painter.cpp&#10;painter.h&#9;FILE&#9;file://D:/homework/HW8/HW8/Painter.h&#10;rect&#9;FILE&#9;file://D:/homework/HW8/HW8/RectanglePainter.cpp&#10;s&#9;FILE&#9;file://D:/homework/HW8/HW8/SquarePainter.cpp&#10;square&#9;FILE&#9;file://D:/homework/HW8/HW8/SquarePainter.cpp&#10;circle&#9;FILE&#9;file://D:/homework/HW8/HW8/CirclePainter.cpp&#10;paintvis&#9;FILE&#9;file://D:/homework/HW8/HW8/PaintVisitor.cpp&#10;add&#9;FILE&#9;file://D:/homework/HW8/HW8/AddCommand.cpp&#10;addc&#9;FILE&#9;file://D:/homework/HW8/HW8/AddCommand.h&#10;group&#9;FILE&#9;file://D:/homework/HW8/HW8/GroupCommand.cpp&#10;pa&#9;FILE&#9;file://D:/homework/HW8/HW8/Painter.h&#10;contr&#9;FILE&#9;file://D:/homework/HW8/HW8/Controller.h&#10;custo&#9;FILE&#9;file://D:/homework/HW8/HW8/CustomScene.cpp&#10;cmakeli&#9;FILE&#9;file://D:/homework/HW8/HW8/CMakeLists.txt&#10;addcom&#9;FILE&#9;file://D:/homework/HW6/HW6/AddCommand.h&#10;model.&#9;FILE&#9;file:///home/red/Homework/HW6/Model.cpp&#10;ungr&#9;FILE&#9;file:///home/red/Homework/HW6/UngroupCommand.cpp&#10;comp&#9;FILE&#9;file:///home/red/Homework/HW6/CompositeGraphics.cpp&#10;graphics&#9;FILE&#9;file:///home/red/Homework/HW6/Graphics.h&#10;simp&#9;FILE&#9;file:///home/red/Homework/HW6/SimpleGraphics.h&#10;compos&#9;FILE&#9;file:///home/red/Homework/HW6/CompositeGraphics.cpp&#10;graphi&#9;FILE&#9;file:///home/red/Homework/HW6/Graphics.h&#10;compo&#9;FILE&#9;file:///home/red/Homework/HW6/CompositeGraphics.cpp&#10;commandman&#9;FILE&#9;file:///home/red/Homework/HW6/CommandManager.cpp&#10;graphics.cpp&#9;FILE&#9;file:///home/red/Homework/HW6/Graphics.cpp&#10;com&#9;FILE&#9;file:///home/red/Homework/HW6/CompositeGraphics.h&#10;movecomm&#9;FILE&#9;file:///home/red/Homework/HW6/MoveCommand.h&#10;movecom&#9;FILE&#9;file:///home/red/Homework/HW6/MoveCommand.cpp&#10;command&#9;FILE&#9;file:///home/red/Homework/HW6/CommandManager.h" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -503,13 +430,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Command.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57081544">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Command.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -604,26 +524,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Observer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Subject.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Subject.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -654,32 +558,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AddCommand.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#39#62#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GraphicsItemFactory.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
           <folding>
             <element signature="e#135#159#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AddCommand.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
-          <folding>
-            <element signature="e#117#137#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -732,24 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="99" column="38" selection-start-line="99" selection-start-column="38" selection-end-line="99" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GroupCommand.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-          <folding>
-            <marker date="1451390840634" expanded="true" signature="215:704" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.CLion12/system/cmake/generated/b74f36f0/b74f36f0/Debug/moc_Gui.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.730897">
@@ -763,17 +629,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#121#151#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PaintVisitor.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#40#65#0" expanded="false" />
+            <element signature="e#121#151#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -798,32 +654,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UngroupCommand.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="e#39#66#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DeleteCommand.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="e#123#143#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeleteCommand.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-          <folding>
-            <element signature="e#39#65#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -873,46 +709,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
           <folding>
-            <element signature="e#119#138#0" expanded="true" />
+            <element signature="e#119#138#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CustomScene.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding>
-            <element signature="e#120#157#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CustomScene.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#40#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding>
-            <element signature="e#106#123#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gui.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="244" column="22" selection-start-line="244" selection-start-column="22" selection-end-line="244" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -926,9 +724,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GraphicsItemFactory.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.133333">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <folding>
+            <element signature="e#40#58#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomScene.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <folding>
+            <element signature="e#120#157#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Observer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Subject.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AddCommand.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PaintVisitor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomScene.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AddCommand.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GroupCommand.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+          <folding>
+            <element signature="e#39#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MoveDownCommand.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35874438">
+        <state vertical-scroll-proportion="0.0">
           <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
           <folding>
             <element signature="e#40#68#0" expanded="true" />
@@ -936,30 +822,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GraphicsItemFactory.cpp">
+    <entry file="file://$PROJECT_DIR$/UngroupCommand.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.133333">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-          <folding>
-            <element signature="e#40#58#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Painter.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="78" selection-start-line="79" selection-start-column="78" selection-end-line="79" selection-end-column="78" />
+          <caret line="65" column="39" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeleteCommand.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27503738">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
           <folding>
-            <element signature="e#40#56#0" expanded="true" />
+            <element signature="e#39#65#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller.h">
+    <entry file="file://F:/Qt/5.5/mingw492_32/include/QtWidgets/qmessagebox.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23916294">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="97" column="8" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="143" column="9" selection-start-line="143" selection-start-column="9" selection-end-line="143" selection-end-column="9" />
+          <folding>
+            <element signature="e#106#123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49177876">
+          <caret line="186" column="57" selection-start-line="186" selection-start-column="57" selection-end-line="186" selection-end-column="57" />
           <folding />
         </state>
       </provider>
