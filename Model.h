@@ -45,11 +45,74 @@ public:
         Model::scene = scene;
     }
 
-
     void setCommandManager(CommandManager *cm) {
         commandManager = cm;
     }
 
+    CommandManager *getCommandManager() const {
+        return commandManager;
+    }
+
+    void clearCommandManagerState() {
+        commandManager->clear();
+    }
+
+    void addGraphics(SimpleGraphics *simpleGraphics){
+        AddCommand *addCommand = new AddCommand(scene, this, simpleGraphics);
+        commandManager->execute(addCommand);
+        this->notifyObservers();
+    }
+
+    void moveGraphicsToPoint(Graphics *graphics, Painter *painter, QPointF pointF){
+        MoveCommand *command = new MoveCommand(graphics, painter, pointF.x(), pointF.y());
+        commandManager->execute(command);
+        this->notifyObservers();
+
+    }
+
+    void undo() {
+        commandManager->undo();
+        this->notifyObservers();
+
+    }
+
+    void redo() {
+        commandManager->redo();
+        this->notifyObservers();
+
+    }
+
+    void grouping() {
+        GroupCommand *command = new GroupCommand(scene, this);
+        commandManager->execute(command);
+        this->notifyObservers();
+    }
+
+    void unGrouping() {
+        UngroupCommand *command = new UngroupCommand(scene, this);
+        commandManager->execute(command);
+        this->notifyObservers();
+    }
+
+    void deleting(){
+        DeleteCommand *command = new DeleteCommand(scene, this);
+        commandManager->execute(command);
+        this->notifyObservers();
+    }
+
+    void moveUp(){
+        MoveUpCommand *command = new MoveUpCommand(this);
+        commandManager->execute(command);
+        this->notifyObservers();
+
+    }
+
+    void moveDown(){
+        MoveDownCommand *command = new MoveDownCommand(this);
+        commandManager->execute(command);
+        this->notifyObservers();
+
+    }
 
 private:
     vector<Graphics *> graphics_list;

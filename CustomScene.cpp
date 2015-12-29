@@ -3,7 +3,16 @@
 //
 
 #include "CustomScene.h"
+#include "Model.h"
+#include "PaintVisitor.h"
 
+
+CustomScene::CustomScene(Model *model) : _model(model) {
+    _selectionRect = new QGraphicsRectItem(0, 0, 0, 0);
+    _selectionRect->setBrush(QBrush(QColor(128, 128, 128, 128)));
+    _selectionRect->setPen(QPen(QColor(128, 128, 128, 128)));
+    _model->addObserver(this);
+}
 
 void CustomScene::mousePressEvent(QGraphicsSceneMouseEvent *event) {
     event->setAccepted(true);
@@ -17,13 +26,25 @@ void CustomScene::mousePressEvent(QGraphicsSceneMouseEvent *event) {
     }
 }
 
-void CustomScene::unselectDeepSelectedGraphics(Graphics *exceptGraphics) {
-    _model->unselectDeepSelectedGraphics(exceptGraphics);
-}
+//void CustomScene::unselectDeepSelectedGraphics(Graphics *exceptGraphics) {
+//    _model->unselectDeepSelectedGraphics(exceptGraphics);
+//}
 
 void CustomScene::update(void *pVoid) {
+    Model *model = (Model *) pVoid;
+
+    this->clear();
+    vector<Graphics *> graphics_list = model->getGraphicsList();
+    CommandManager *commandManager = model->getCommandManager();
+    for (int i = graphics_list.size() - 1; i >= 0; i--) {
+        PaintVisitor paintVisitor(model);
+        paintVisitor.setScene(this);
+        graphics_list[i]->accept(paintVisitor);
+        paintVisitor.Draw();
+    }
 
 }
+
 
 
 
